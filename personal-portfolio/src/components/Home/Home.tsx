@@ -3,15 +3,18 @@ import AnimatedText from "react-animated-text-content";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
+import Transition from "../TextTransition/Transition";
 import logoAnimation from "../../assets/gummy-app-development.png";
 import "./Home.css";
 
 const Home = () => {
-
-  const welcomeText = ["Hello, I'm Todor Savov.", "I'm a Front-End Developer.", "Welcome to my portfolio."];
-
-  return (
-    <Box className="home">
+    const welcomeText = [
+        "Hello, I'm Todor Savov.",
+        "Welcome to my portfolio."
+    ];
+      
+    return (
+        <Box className="home">
             {welcomeText.map((text, index) => (
                 <AnimatedText 
                     key={index}
@@ -30,9 +33,11 @@ const Home = () => {
                     rootMargin="20%"
                     className="animated-text"
                 >
-                    {text}
+                    {text}                
                 </AnimatedText>
             ))}
+
+            <Transition />
  
             <img src={logoAnimation} alt="logo" className="logo-animation" />
             <span>Illustration by <a href="https://icons8.com/illustrations/author/SH5qVUiWnjy4">Vijay Verma Ouch!</a></span>
@@ -64,8 +69,8 @@ const Home = () => {
                     <EmailIcon fontSize="large" />
                 </IconButton>
             </Box>        
-    </Box>
-  );
+        </Box>
+    );
 };
 
 export default Home;
