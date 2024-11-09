@@ -6,6 +6,7 @@ import type { Container, Engine } from "tsparticles-engine";
 import { loadSlim } from "tsparticles-slim";
 import Navigation from './components/Navigation/Navigation'
 import Home from './components/Home/Home'
+import About from './components/About/About';
 import Projects from './components/Projects/Projects'
 import './App.css'
 
@@ -26,7 +27,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
-        <Route path="/about" element={<h1>About</h1>} />
+        <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/experience" element={<h1>Experience</h1>} />
         <Route path="/contact" element={<h1>Contact</h1>} />
