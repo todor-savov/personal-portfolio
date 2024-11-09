@@ -1,0 +1,52 @@
+.home {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    padding: 3%;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 1;
+}
+
+.animated-text {
+    font-size: clamp(1.5rem, 2.5vw, 2.5rem);
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.logo-animation {
+    width: 50%;
+}
+
+.social-icons .MuiIconButton-root {
+    color: #333; 
+    margin: 0 8px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons .MuiIconButton-root:hover {
+    color: #1976d2;
+    transform: scale(1.2);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .home {
+        width: 90%;
+        padding: 3%;
+        border-radius: 10px;
+    }
+
+    .logo-animation {
+        width: 70%;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-animation {
+        width: 60%;
+    }
+}
