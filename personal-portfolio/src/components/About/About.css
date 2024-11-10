@@ -27,6 +27,8 @@
 }
 
 .text-container {
+    font-size: 1.2rem;
+    font-family: 'Roboto';
     padding: 25px;
 }
 
