@@ -1,0 +1,116 @@
+.contact-container {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    padding: 40px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.contact-row {
+    display: flex;
+    flex-direction: row; 
+    margin-bottom: 10px;
+}
+
+.contact-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    padding: 10px;
+    font-size: 1.1em;
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    display: flex;
+    flex-direction: column;
+    color: #333;
+    font-size: 50px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #007bff;
+    scale: 1.2;
+}
+
+.social-icons span {
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.contact-right {
+    flex: 1;
+    padding: 20px;  
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    width: 100%;        
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form label {
+    font-weight: bold;
+    text-align: left;
+}
+
+.field-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button[type="submit"] {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.contact-form button[type="submit"]:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.error {
+    color: #d9534f;
+    font-size: 14px;
+    margin-top: -10px;
+}
