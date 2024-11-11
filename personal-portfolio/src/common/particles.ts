@@ -10,11 +10,11 @@ export const particlesOptions: ISourceOptions = {
     interactivity: {
         events: {
             onClick: {
-                enable: true,
+                enable: false,
                 mode: "push",
             },
             onHover: {
-                enable: true,
+                enable: false,
                 mode: "repulse",
             },
             resize: true,
@@ -42,7 +42,7 @@ export const particlesOptions: ISourceOptions = {
         },
         move: {
             direction: "none",
-            enable: true,
+            enable: false,
             outModes: {
                 default: "bounce",
             },
