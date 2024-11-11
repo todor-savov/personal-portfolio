@@ -8,8 +8,8 @@ import Navigation from './components/Navigation/Navigation'
 import Home from './components/Home/Home'
 import About from './components/About/About';
 import Projects from './components/Projects/Projects'
-import './App.css'
 import Contact from './components/Contact/Contact';
+import './App.css'
 
 const App = () => {
 
