@@ -8,7 +8,7 @@ export const projects = [
         image: '/finance_app_photo.jpg',
         github: 'https://github.com/todor-savov/Expense-Tracker',
         liveSite: 'https://expense-tracking-app-33495.web.app/',
-        techStack: ['React', 'TypeScript', 'JavaScript', 'Material UI', 'CSS', 'Firebase']
+        techStack: ['React', 'TypeScript', 'JavaScript', 'MaterialUI', 'CSS', 'HTML5', 'Firebase']
     },
     {   
         title: 'Dynamic Event Scheduling Web App', 
@@ -31,14 +31,13 @@ export const projects = [
         techStack: ['React', 'JavaScript', 'HTML5', 'CSS', 'Firebase']
     },
     {
-
         title: 'GIF Search and Browse Site',
         description: `  Developed a Giphy website using vanilla JavaScript and the Giphy API to showcase trending GIFs. 
                         The site allows users to upload and favorite their own GIFs, with local storage functionality to manage favorites and enhance the user experience.
                      `,
         image: '/no_preview_image.jpg',
         github: 'https://github.com/Cyber-Creators/WebProject_1',
-        techStack: ['JavaScript', 'HTML5', 'CSS', 'Web Storage API']
+        techStack: ['JavaScript', 'HTML5', 'CSS', 'WebStorageAPI']
     },    
     {
         title: 'Remote Resource Monitoring Desktop App',
@@ -46,6 +45,6 @@ export const projects = [
                         It helps with decision-making for upgrading or replacing LAN resources.
                      `,
         image: '/no_preview_image.jpg',
-        techStack: ['Java Swing', 'JDBC', 'MySQL', 'Windows Management Instrumentation (WMI)']
+        techStack: ['JavaSwing', 'JDBC', 'MySQL', 'WMI']
     }    
 ];
