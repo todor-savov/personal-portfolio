@@ -31,14 +31,14 @@ const techIcons: TechIcons = {
   React: <FaReact color="#61DAFB" size={50} />,     
   JavaScript: <SiJavascript color="#F7DF1E" size={50} />,
   TypeScript: <SiTypescript color="#007ACC" size={50} />, 
-  MaterialUI: <Avatar src={MaterialUILogo} variant='square'/>,
+  MaterialUI: <Avatar src={MaterialUILogo} variant='square' sx={{ width: 15, height: 15 }} />,
   HTML5: <FaHtml5 color="#E34F26" size={50} />,
   CSS: <SiCss3 color="#1572B6" size={50} />,
   Firebase: <SiFirebase color="#FFCA28" size={50} />,
   WebStorageAPI: <FaDatabase size={50} color="#4A90E2" />,
   JavaSwing: <FaJava size={50} color="#f8981d" />,
   JDBC: <FaDatabase size={50} color="#f8981d" />,
-  MySQL: <Avatar src={MySQLlogo} variant='square' sx={{ width: 55, height: 35 }}/>,
+  MySQL: <Avatar src={MySQLlogo} variant='square' sx={{ width: 29, height: 18 }}/>,
   WMI: <FaCog size={50} color="#0078D4" /> 
 };
 
@@ -55,14 +55,12 @@ const Projects = () => {
         {projects.map((project, index) => (
           <SwiperSlide key={index} className="swiper-slide">     
             <div className="text-container">
-              <Typography variant="h5" sx={{ fontWeight: 'bold', marginTop: 2, marginBottom: 5 }}>{project.title}</Typography>
-
-              <Typography variant="body1" sx={{ fontSize: '1.3rem', marginBottom: 5 }}>{project.description}</Typography>
+              <Typography variant="h5">{project.title}</Typography>
+              <Typography variant="body1">{project.description}</Typography>
+              <Typography variant="h6">Tech Stack:</Typography>
 
               <div className="tech-stack">
-                <Typography variant="h6" sx={{ fontWeight: 'bold' }}>Tech Stack:</Typography>
-                
-                {project.techStack && project.techStack.map((tech, i) => (                    
+                {project.techStack && project.techStack.map((tech, i) => (
                     <div className="tech-item" key={i}>
                         {techIcons[tech] || tech}
                         <Typography variant="caption">{tech}</Typography>
