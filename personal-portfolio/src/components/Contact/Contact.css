@@ -2,8 +2,8 @@
     position: absolute;
     transform: translate(-50%, -50%);
     z-index: 1;
-    padding: 30px;
-    margin-top: 50px;
+    padding: 1rem;
+    margin-top: 2rem;
     border: 1px solid #ddd;
     border-radius: 8px;
     background-color: rgba(255, 255, 255, 0.9);
@@ -12,12 +12,12 @@
 .contact-left {
     display: flex;
     flex-direction: column;
-    padding: 10px;
+    padding: 0.5rem;
 }
 
 .contact-left p {
     font-size: 1rem;
-    margin-bottom: 10px;
+    margin-bottom: 2rem;
     color: black;
 }
 
@@ -25,15 +25,14 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 50px;
-    margin-top: 10px;
+    gap: 5rem;
 }
 
 .social-icons a {
     display: flex;
     flex-direction: column;
     color: #333;
-    font-size: 50px;
+    font-size: 3rem;
     transition: color 0.3s ease;
 }
 
@@ -43,22 +42,21 @@
 }
 
 .social-icons span {
-    font-size: 12px;
-    margin-top: 5px;
+    font-size: 0.9rem;
+    margin-top: 0.3rem;
 }
 
 .contact-right {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    padding: 20px;
+    padding: 1.5rem;
 }
 
 .contact-form {
     display: flex;
     flex-direction: column;
-    gap: 15px;
-    padding: 20px;
+    gap: 1rem;
+    padding: 1rem;
 }
 
 .contact-form label {
@@ -76,11 +74,11 @@
 .contact-form input[type="text"],
 .contact-form input[type="email"],
 .contact-form textarea {
-    padding: 8px;
-    margin-bottom: 10px;
+    padding: 0.5rem;
+    margin-bottom: 0.8rem;
     border: 1px solid #ccc;
     border-radius: 4px;
-    font-size: 14px;
+    font-size: 1rem;
     background-color: white;
 }
 
@@ -89,7 +87,7 @@
 }
 
 .contact-form button[type="submit"] {
-    padding: 10px;
+    padding: 0.8rem;
     background-color: #007bff;
     color: #fff;
     border: none;
@@ -108,15 +106,14 @@
 
 .error {
     color: #d9534f;
-    font-size: 14px;
+    font-size: 0.9rem;
     font-weight: bold;
-    margin-top: -10px;
+    margin-top: -0.7rem;
 }
 
 @media (max-width: 480px) {   
     .contact-container {
-        margin-top: 150px;
-        width: 65%;
+        margin-top: 7rem;
     }
 
     .contact-left, .contact-right {
@@ -125,16 +122,16 @@
 
     .social-icons {
         gap: 1.5rem;
-        margin-bottom: 5px;
+        margin-bottom: 1.5rem;
     }
 
     .social-icons a {
-        font-size: 30px;
+        font-size: 1.3rem;
     }
     
     .contact-form {
         gap: 0.6rem;
-        padding: 8px;
+        padding: 0.2rem;
     }
     
     .contact-form input[type="text"],
@@ -144,54 +141,23 @@
     }
 
     .error {
-        font-size: 12px;
+        font-size: 0.8rem;
     }
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
     .contact-container {
-        width: 75%;
-        height: auto; 
-        margin-top: 20px;
+        width: 60%;
+        margin-top: 2rem;
     }
     
     .contact-form input[type="text"],
     .contact-form input[type="email"],
     .contact-form textarea {
-        font-size: 15px;
+        font-size: 0.9rem;
     }
 
     .error {
-        font-size: 13px;
-    }
-}
-
-@media (min-width: 769px) {
-    .contact-container {
-        width: 60%; /* Slightly smaller on larger screens */
-        padding: 50px;
-        margin-top: 50px;
-    }
-
-    .contact-left p {
-        font-size: 1.2em;
-    }
-
-    .social-icons a {
-        font-size: 45px; /* Slightly smaller for better spacing */
-    }
-    
-    .contact-form input[type="text"],
-    .contact-form input[type="email"],
-    .contact-form textarea {
-        font-size: 16px;
-    }
-
-    .contact-form button[type="submit"] {
-        font-size: 16px;
-    }
-
-    .error {
-        font-size: 14px;
+        font-size: 0.9rem;
     }
 }
