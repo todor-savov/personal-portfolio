@@ -42,7 +42,7 @@ export const particlesOptions: ISourceOptions = {
         },
         move: {
             direction: "none",
-            enable: false,
+            enable: true,
             outModes: {
                 default: "bounce",
             },
