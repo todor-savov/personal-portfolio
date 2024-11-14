@@ -24,7 +24,7 @@ const Transition = () => {
     }, []);
 
     return (
-        <Typography variant="h5" style={{ display: 'flex', fontWeight: 'bold', fontSize: '2.3rem' }}>
+        <Typography variant="h4" sx={{ display: 'flex', alignItems: 'center', fontWeight: "bold", mt: 2 }}>
             I am a Front-End Developer with&nbsp;
             <Box style={{ display: 'flex', alignItems: 'center', minWidth: '250px' }}>
                 {icons[index % icons.length]}&nbsp;
