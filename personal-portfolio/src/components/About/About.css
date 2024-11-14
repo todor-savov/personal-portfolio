@@ -26,6 +26,7 @@
 .text-container {
     font-size: 1.2rem;
     font-family: 'Roboto';
+    color: black;
 }
 
 .second-container {
@@ -39,6 +40,7 @@
 #tech-stack {
     margin: 24px;
     font-weight: bold;
+    color: black;
 }
 
 #container-scroll {
@@ -56,6 +58,10 @@
 .item {
     padding: 0.7rem 1rem;
     white-space: nowrap;
+}
+
+.item p {
+    color: black;
 }
 
 .item:hover {

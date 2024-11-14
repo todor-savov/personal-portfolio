@@ -37,7 +37,7 @@ const About = () => {
             <Avatar alt="Todor-Savov" src={ownPhoto} variant='square' id='avatar-photo' />
 
             <Box className="text-container">
-                <Typography variant="h4" gutterBottom sx={{ fontWeight: "bold" }}> ABOUT ME </Typography>
+                <Typography variant="h4" gutterBottom sx={{ fontWeight: "bold", color: 'black' }}> ABOUT ME </Typography>
                             
                 <div className="typewriter-container">
                         {cleanedIntroText.split("").map((char, index) => (
