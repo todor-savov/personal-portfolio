@@ -40,9 +40,9 @@ const About = () => {
                 <Typography variant="h4" gutterBottom sx={{ fontWeight: "bold", color: 'black' }}> ABOUT ME </Typography>
                             
                 <div className="typewriter-container">
-                        {cleanedIntroText.split("").map((char, index) => (
-                            <span key={index} className="typewriter-char" style={{ animationDelay: `${index * 0.05}s` }}>
-                                {char === " " ? "\u00A0" : char}
+                        {cleanedIntroText.split(" ").map((word, index) => (
+                            <span key={index} className="typewriter-word" style={{ animationDelay: `${index * 0.2}s` }}>
+                                {word + "\u00A0"}
                             </span>
                         ))}
                 </div>

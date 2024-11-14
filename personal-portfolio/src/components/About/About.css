@@ -84,10 +84,27 @@
     }
 }
 
+.typewriter-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+  
+.typewriter-word {
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+    display: inline-block;
+}
+  
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
 @media (max-width: 480px) {
     .main-container {
-        margin-top: 260px;
         width: 80%;
+        margin-top: 250px;
         padding: 5px;
     }
 
@@ -96,7 +113,7 @@
     }
 
     .text-container {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 
     .scroll {
@@ -113,12 +130,12 @@
 
     .item p {
         font-size: 0.8rem;
-    }
+    }   
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
     .main-container {
-        margin-top: 20px;
+        margin-top: 100px;
         width: 80%;
         padding: 10px;
     }
@@ -138,19 +155,4 @@
     .item {
         padding: 0.6rem 0.8rem;
     }
-}
-
-.typewriter-container {
-    display: flex;
-    flex-wrap: wrap;
-}
-  
-.typewriter-char {
-    opacity: 0;
-    animation: fadeIn 0.5s forwards;
-}
-  
-@keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
 }
