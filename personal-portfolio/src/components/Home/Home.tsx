@@ -1,4 +1,4 @@
-import { Box, IconButton } from "@mui/material";
+import { Box, IconButton, Typography } from "@mui/material";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
@@ -14,16 +14,18 @@ const Home = () => {
     ];
       
     return (
-        <Box className="home">                       
+        <Box className="home">
            {welcomeText.map((text, index) => (
                 <div key={index} className="typewriter">
-                    {text.split('').map((char, index) => (
-                        <span key={index} style={{ animationDelay: `${index * 0.05}s` }}
-                            className="typewriter-character"
-                        >
-                            {char === ' ' ? '\u00A0' : char}
-                        </span>
-                    ))}
+                    <Typography variant="h4" key={index} sx={{ mb: 2, fontWeight: "bold", mt: index === 0 ? 0 : 2 }}>
+                        {text.split('').map((char, index) => (
+                            <span key={index} style={{ animationDelay: `${index * 0.05}s` }}
+                                className="typewriter-character"
+                            >
+                                {char === ' ' ? '\u00A0' : char}
+                            </span>
+                        ))}
+                    </Typography>
                 </div>
             ))}
 
