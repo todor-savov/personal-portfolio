@@ -119,3 +119,18 @@
         padding: 0.6rem 0.8rem;
     }
 }
+
+.typewriter-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+  
+.typewriter-char {
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+}
+  
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}

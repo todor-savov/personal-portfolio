@@ -2,7 +2,6 @@ import { Box, Typography, Avatar } from '@mui/material';
 import { FaReact, FaJsSquare, FaDatabase } from 'react-icons/fa';
 import { SiTypescript, SiFirebase, SiMaterialdesignicons } from 'react-icons/si';
 import ownPhoto from '../../assets/IMG_0004-Photoroom.png';
-import AnimatedText from '../AnimatedText/AnimatedText';
 import './About.css';
 
 const About = () => {
@@ -28,7 +27,9 @@ const About = () => {
             support at SiteGround honed my skills in troubleshooting, attention to detail, and effective communication. 
             Today, I am passionate about building interactive, responsive applications and continuously expanding my skills in 
             JavaScript and front-end technologies.
-        `;
+        `;        
+
+    const cleanedIntroText = introText.replace(/\s+/g, " ").trim();
 
   return (
     <Box className="main-container">
@@ -37,7 +38,14 @@ const About = () => {
 
             <Box className="text-container">
                 <Typography variant="h4" gutterBottom sx={{ fontWeight: "bold" }}> ABOUT ME </Typography>
-                <AnimatedText text={introText} />
+                            
+                <div className="typewriter-container">
+                        {cleanedIntroText.split("").map((char, index) => (
+                            <span key={index} className="typewriter-char" style={{ animationDelay: `${index * 0.05}s` }}>
+                                {char === " " ? "\u00A0" : char}
+                            </span>
+                        ))}
+                </div>
             </Box>
         </Box>
 
