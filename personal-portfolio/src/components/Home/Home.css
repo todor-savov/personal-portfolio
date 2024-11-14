@@ -50,3 +50,14 @@
         width: 60%;
     }
 }
+
+.typewriter-character {
+    display: inline-block;
+    opacity: 0;
+    animation: fadeInEffect 0.5s ease forwards;
+}
+
+@keyframes fadeInEffect {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}

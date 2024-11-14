@@ -3,7 +3,6 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
 import Transition from "../TextTransition/Transition";
-import AnimatedText from "../AnimatedText/AnimatedText";
 import logoAnimation from "../../assets/gummy-app-development.png";
 import "./Home.css";
 
@@ -15,9 +14,17 @@ const Home = () => {
     ];
       
     return (
-        <Box className="home">            
-            {welcomeText.map((text, index) => (
-                <AnimatedText key={index} text={text} />
+        <Box className="home">                       
+           {welcomeText.map((text, index) => (
+                <div key={index} className="typewriter">
+                    {text.split('').map((char, index) => (
+                        <span key={index} style={{ animationDelay: `${index * 0.05}s` }}
+                            className="typewriter-character"
+                        >
+                            {char === ' ' ? '\u00A0' : char}
+                        </span>
+                    ))}
+                </div>
             ))}
 
             <Transition />
