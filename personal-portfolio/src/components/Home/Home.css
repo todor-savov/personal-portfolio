@@ -18,7 +18,9 @@
 }
 
 .logo-animation {
-    width: 40%;
+    width: 300px;
+    height: auto;
+    margin: 2px auto;
 }
 
 .social-icons .MuiIconButton-root {
