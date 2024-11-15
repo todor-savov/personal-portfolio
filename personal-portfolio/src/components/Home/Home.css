@@ -1,30 +1,40 @@
 .home {
     position: absolute;
     transform: translate(-50%, -50%);
+    z-index: 1;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 40%;
-    padding: 3%;
     border-radius: 50px;
     background-color: rgba(255, 255, 255, 0.9);
-    z-index: 1;
+    width: 40%;
+    padding: 3%;
+    margin-top: 2%;
 }
 
-.animated-text {
-    font-size: clamp(1.5rem, 2.5vw, 2.5rem);
+#front-dev {
+    display: flex;
+    width: 100%;
+    align-items: center;
     font-weight: bold;
-    margin-bottom: 15px;
+    margin-top: 2%;
+} 
+
+#tech-set {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .logo-animation {
     width: 300px;
     height: auto;
-    margin: 2px auto;
+    margin: 20px auto;
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
 
 .social-icons .MuiIconButton-root {
-    color: #333; 
+    color: #333;
     margin: 0 8px;
     transition: transform 0.3s ease, color 0.3s ease;
 }
@@ -32,25 +42,6 @@
 .social-icons .MuiIconButton-root:hover {
     color: #1976d2;
     transform: scale(1.2);
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .home {
-        width: 90%;
-        padding: 3%;
-        border-radius: 10px;
-    }
-
-    .logo-animation {
-        width: 70%;
-    }
-}
-
-@media (max-width: 480px) {
-    .logo-animation {
-        width: 60%;
-    }
 }
 
 .typewriter-character {
@@ -62,4 +53,47 @@
 @keyframes fadeInEffect {
     from { opacity: 0; }
     to { opacity: 1; }
+}
+
+@media (max-width: 768px) {
+    .home {
+        width: 70%;
+        padding: 4%;
+        border-radius: 20px;
+    }
+
+    .typewriter h4 {
+        margin-top: 5%;
+    }
+
+    #tech-set {
+        width: 90%;
+        margin-left: 3%;
+    }
+    
+    .logo-animation {
+        margin: 15px auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .home {
+        width: 80%;
+        border-radius: 15px;
+        padding: 5%;
+        margin-top: 8%;
+    }
+
+    .typewriter h4 {
+        font-size: 1.2rem;
+    }
+
+    #front-dev {
+        font-size: 1.2rem;
+    }
+
+    .logo-animation {
+        width: 60%;
+        margin: 10px auto;
+    }
 }
