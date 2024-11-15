@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import TextTransition, { presets } from 'react-text-transition';
 import { Box, Typography } from "@mui/material";
 import { SiReact, SiJavascript, SiTypescript } from 'react-icons/si';
+import '../Home/Home.css';
 
 const Transition = () => {
     const [index, setIndex] = useState(0);
@@ -13,9 +14,9 @@ const Transition = () => {
     ];
 
     const icons = [
-        <SiReact size={40} color="#61DAFB" />,
-        <SiJavascript size={40} color="#f0db4f" />,
-        <SiTypescript size={40} color="#007acc" />,         
+        <SiReact size={30} color="#61DAFB" />,
+        <SiJavascript size={30} color="#f0db4f" />,
+        <SiTypescript size={30} color="#007acc" />,         
     ];
 
     useEffect(() => {
@@ -24,9 +25,9 @@ const Transition = () => {
     }, []);
 
     return (
-        <Typography variant="h4" sx={{ display: 'flex', alignItems: 'center', fontWeight: "bold", mt: 2 }}>
+        <Typography variant="h4" id='front-dev'>
             I am a Front-End Developer with&nbsp;
-            <Box style={{ display: 'flex', alignItems: 'center', minWidth: '250px' }}>
+            <Box id='tech-set'>
                 {icons[index % icons.length]}&nbsp;
                 <span style={{ color: "#1976d2" }}>
                     <TextTransition springConfig={presets.wobbly}>
