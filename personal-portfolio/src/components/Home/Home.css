@@ -17,7 +17,8 @@
     align-items: center;
     font-weight: bold;
     margin-top: 2%;
-} 
+    color: black;
+}
 
 #tech-set {
     display: flex;
@@ -31,6 +32,10 @@
     margin: 20px auto;
     margin-top: 1%;
     margin-bottom: 1%;
+}
+
+#copyrights {
+    color: black;
 }
 
 .social-icons .MuiIconButton-root {
@@ -64,6 +69,7 @@
 
     .typewriter h4 {
         margin-top: 5%;
+        color: black;
     }
 
     #tech-set {
@@ -86,6 +92,7 @@
 
     .typewriter h4 {
         font-size: 1.2rem;
+        color: black;
     }
 
     #front-dev {

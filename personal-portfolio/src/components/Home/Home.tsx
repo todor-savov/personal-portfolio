@@ -32,7 +32,7 @@ const Home = () => {
             <Transition />
  
             <img src={logoAnimation} alt="logo" className="logo-animation" />
-            <span>Illustration by <a href="https://icons8.com/illustrations/author/SH5qVUiWnjy4">Vijay Verma Ouch!</a></span>
+            <span id="copyrights">Illustration by <a href="https://icons8.com/illustrations/author/SH5qVUiWnjy4">Vijay Verma Ouch!</a></span>
 
             <Box className="social-icons" sx={{ mt: 2 }}>
                 <IconButton
