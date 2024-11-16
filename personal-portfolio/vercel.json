@@ -1,9 +1,14 @@
 {
-    "rewrites": [
-      {
-        "source": "/about",
-        "destination": "/index.html"
-      }
-    ]
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/assets/(.*)",
+      "dest": "/assets/$1"
+    }
+  ]
 }
-  
