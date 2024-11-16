@@ -47,7 +47,7 @@ const Projects = () => {
   return (
       <Swiper direction='vertical' className="swiper-container"
               modules={[Autoplay, Pagination, Navigation]} 
-              autoplay={{ delay: 5000, disableOnInteraction: false, pauseOnMouseEnter: true }}
+              autoplay={{ delay: 10000, disableOnInteraction: false, pauseOnMouseEnter: true }}
               spaceBetween={30} slidesPerView={1}
               pagination={{ clickable: true, dynamicBullets: true }}
               onSwiper={() => {}} onSlideChange={() => {}}               
