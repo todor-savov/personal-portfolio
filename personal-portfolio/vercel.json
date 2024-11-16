@@ -4,11 +4,5 @@
       "source": "/(.*)",
       "destination": "/"
     }
-  ],
-  "routes": [
-    {
-      "src": "/assets/(.*)",
-      "dest": "/assets/$1"
-    }
   ]
 }
