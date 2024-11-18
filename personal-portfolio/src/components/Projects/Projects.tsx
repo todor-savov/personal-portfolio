@@ -7,6 +7,7 @@ import { Avatar, Tooltip, Typography } from '@mui/material';
 import MaterialUILogo from '../../assets/MaterialUILogo.png';
 import MySQLlogo from '../../assets/mysql_logo.png';
 import { projects } from '../../common/constants';
+import { motion } from "framer-motion";
 import 'swiper/css';
 import 'swiper/css/pagination';
 import './Projects.css';
@@ -45,6 +46,12 @@ const techIcons: TechIcons = {
 const Projects = () => {
   
   return (
+    <motion.div
+      initial={{ opacity: 0, scale: 0.1, rotate: -180 }}
+      whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
+      viewport={{ once: true }} transition={{ duration: 3 }}
+      style={{ position: 'relative', zIndex: 1 }}
+    >
       <Swiper direction='vertical' className="swiper-container"
               modules={[Autoplay, Pagination, Navigation]} 
               autoplay={{ delay: 10000, disableOnInteraction: false, pauseOnMouseEnter: true }}
@@ -93,6 +100,7 @@ const Projects = () => {
           </SwiperSlide>
         ))}
       </Swiper>
+    </motion.div>
   );
 }
 
