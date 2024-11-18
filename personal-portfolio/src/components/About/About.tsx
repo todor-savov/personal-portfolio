@@ -1,4 +1,5 @@
 import { Box, Typography, Avatar } from '@mui/material';
+import { motion } from "framer-motion";
 import { FaReact, FaJsSquare, FaDatabase } from 'react-icons/fa';
 import { SiTypescript, SiFirebase, SiMaterialdesignicons } from 'react-icons/si';
 import ownPhoto from '../../assets/IMG_0004-Photoroom.png';
@@ -32,38 +33,45 @@ const About = () => {
     const cleanedIntroText = introText.replace(/\s+/g, " ").trim();
 
   return (
-    <Box className="main-container">
-        <Box className="first-container">
-            <Avatar alt="Todor-Savov" src={ownPhoto} variant='square' id='avatar-photo' />
+        <motion.div
+            initial={{ opacity: 0, scale: 0.1, rotate: -180 }}
+            whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
+            viewport={{ once: true }} transition={{ duration: 3 }}
+            style={{ position: 'relative', zIndex: 1 }}
+        >
+            <Box className="main-container">
+                <Box className="first-container">
+                    <Avatar alt="Todor-Savov" src={ownPhoto} variant='square' id='avatar-photo' />
 
-            <Box className="text-container">
-                <Typography variant="h4" gutterBottom sx={{ fontWeight: "bold", color: 'black' }}> ABOUT ME </Typography>
-                            
-                <div className="typewriter-container">
-                        {cleanedIntroText.split(" ").map((word, index) => (
-                            <span key={index} className="typewriter-word" style={{ animationDelay: `${index * 0.2}s` }}>
-                                {word + "\u00A0"}
-                            </span>
-                        ))}
-                </div>
-            </Box>
-        </Box>
-
-        <Box className="second-container">
-            <Typography variant="h5" gutterBottom id='tech-stack'> Tech Skills </Typography>
-        
-            <div id='container-scroll'>
-                <div className='scroll'>
-                    {techStack.map((tech, index) => (
-                        <div className='item' key={index}>
-                            {tech.icon}
-                            <Typography variant="body1" color="text.secondary"> {tech.name} </Typography>
+                    <Box className="text-container">
+                        <Typography variant="h4" gutterBottom sx={{ fontWeight: "bold", color: 'black' }}> ABOUT ME </Typography>
+                                    
+                        <div className="typewriter-container">
+                                {cleanedIntroText.split(" ").map((word, index) => (
+                                    <span key={index} className="typewriter-word" style={{ animationDelay: `${index * 0.2}s` }}>
+                                        {word + "\u00A0"}
+                                    </span>
+                                ))}
                         </div>
-                    ))}
-                </div>
-            </div>
-        </Box>
-    </Box>
+                    </Box>
+                </Box>
+
+                <Box className="second-container">
+                    <Typography variant="h5" gutterBottom id='tech-stack'> Tech Skills </Typography>
+                
+                    <div id='container-scroll'>
+                        <div className='scroll'>
+                            {techStack.map((tech, index) => (
+                                <div className='item' key={index}>
+                                    {tech.icon}
+                                    <Typography variant="body1" color="text.secondary"> {tech.name} </Typography>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </Box>
+            </Box>
+        </motion.div>
   );
 };
 
