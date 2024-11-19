@@ -1,8 +1,9 @@
 import { Box, Typography, Avatar } from '@mui/material';
 import { motion } from "framer-motion";
-import { FaReact, FaJsSquare, FaDatabase } from 'react-icons/fa';
-import { SiTypescript, SiFirebase, SiMaterialdesignicons } from 'react-icons/si';
+import { FaReact, FaJsSquare, FaHtml5 } from 'react-icons/fa';
+import { SiTypescript, SiFirebase, SiCss3 } from 'react-icons/si';
 import ownPhoto from '../../assets/IMG_0004-Photoroom.png';
+import MaterialUILogo from '../../assets/MaterialUILogo.png';
 import './About.css';
 
 const About = () => {
@@ -12,8 +13,9 @@ const About = () => {
         { name: 'JavaScript', icon: <FaJsSquare size={50} color="#F0DB4F" /> },
         { name: 'TypeScript', icon: <SiTypescript size={50} color="#007ACC" /> },
         { name: 'Firebase', icon: <SiFirebase size={50} color="#FFCA28" /> },
-        { name: 'Material-UI', icon: <SiMaterialdesignicons size={50} color="#0081CB" /> },
-        { name: 'SQL', icon: <FaDatabase size={50} color="#336791" /> },
+        { name: 'MaterialUI', icon: <Avatar src={MaterialUILogo} variant='square' sx={{ width: 50, height: 50 }} />},
+        { name: 'HTML5', icon: <FaHtml5 color="#E34F26" size={50} /> },
+        { name: 'CSS', icon: <SiCss3 color="#1572B6" size={50} /> }
     ];
 
     const introText = 
