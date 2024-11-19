@@ -26,7 +26,7 @@ const Home = () => {
                     <div key={index} className="typewriter">
                         <Typography variant="h4" key={index} sx={{ mb: 2, fontWeight: "bold", mt: index === 0 ? 0 : 2 }}>
                             {text.split('').map((char, index) => (
-                                <span key={index} style={{ animationDelay: `${index * 0.05}s` }}
+                                <span key={index} style={{ animationDelay: `${index * 0.18}s` }}
                                     className="typewriter-character"
                                 >
                                     {char === ' ' ? '\u00A0' : char}
