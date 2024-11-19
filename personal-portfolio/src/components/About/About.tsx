@@ -13,9 +13,9 @@ const About = () => {
         { name: 'JavaScript', icon: <FaJsSquare size={50} color="#F0DB4F" /> },
         { name: 'TypeScript', icon: <SiTypescript size={50} color="#007ACC" /> },
         { name: 'Firebase', icon: <SiFirebase size={50} color="#FFCA28" /> },
-        { name: 'MaterialUI', icon: <Avatar src={MaterialUILogo} variant='square' sx={{ width: 50, height: 50 }} />},
-        { name: 'HTML5', icon: <FaHtml5 color="#E34F26" size={50} /> },
-        { name: 'CSS', icon: <SiCss3 color="#1572B6" size={50} /> }
+        { name: 'MaterialUI', icon: <Avatar src={MaterialUILogo} variant='square' id='material-ui-icon' />},
+        { name: 'HTML5', icon: <FaHtml5 size={50} color="#E34F26" /> },
+        { name: 'CSS', icon: <SiCss3 size={50} color="#1572B6" /> }
     ];
 
     const introText = 
