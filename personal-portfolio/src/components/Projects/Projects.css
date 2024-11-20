@@ -40,11 +40,6 @@
   color: black;
 }
 
-.tech-icons {
-  width: 2rem;
-  height: 2rem;
-}
-
 .image-container {
   flex: 1;
   display: flex;
@@ -84,24 +79,36 @@
 .tech-stack {
   display: flex;
   justify-content: center;
-  animation: loop 8s linear infinite;
+  margin: 0 auto;
   overflow: hidden;
+  max-width: 70%;
+  width: 100%;
+  gap: 20px;
 }
 
 .tech-item {
   display: flex;
   flex-direction: column;
   align-items: center;
+  animation: loop 5s linear infinite;
   width: 8rem;
   height: 4rem;
-  transition: transform 0.3s ease;
-  cursor: pointer;
   color: black;
   gap: 0.2rem;
 }
 
-.tech-item:hover {
-  transform: scale(1.2);
+@keyframes loop {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.tech-icons {
+  width: 2rem;
+  height: 2rem;
 }
 
 @media (max-width: 768px) {
@@ -127,7 +134,12 @@
     width: 100%;
   }
 
-  .tech-stack, .buttons-container {
+  .tech-stack {
+    max-width: 80%;
+    gap: 25px;
+  }
+
+  .buttons-container {
     gap: 12px;
   }
 }
@@ -178,8 +190,13 @@
   .buttons-container a {
     padding: 8px;
   }
+  
+  .tech-stack {
+    max-width: 80%;
+    gap: 8px;
+  }
 
-  .tech-stack, .buttons-container {
+  .buttons-container {
     gap: 8px;
   }
 }
