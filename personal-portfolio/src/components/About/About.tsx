@@ -9,13 +9,13 @@ import './About.css';
 const About = () => {
     
     const techStack = [
-        { name: 'React', icon: <FaReact size={50} color="#61DBFB" /> },
-        { name: 'JavaScript', icon: <FaJsSquare size={50} color="#F0DB4F" /> },
-        { name: 'TypeScript', icon: <SiTypescript size={50} color="#007ACC" /> },
-        { name: 'Firebase', icon: <SiFirebase size={50} color="#FFCA28" /> },
-        { name: 'MaterialUI', icon: <Avatar src={MaterialUILogo} variant='square' id='material-ui-icon' />},
-        { name: 'HTML5', icon: <FaHtml5 size={50} color="#E34F26" /> },
-        { name: 'CSS', icon: <SiCss3 size={50} color="#1572B6" /> }
+        { name: 'React', icon: <FaReact color="#61DBFB" className='tech-skills' /> },
+        { name: 'JavaScript', icon: <FaJsSquare color="#F0DB4F" className='tech-skills' /> },
+        { name: 'TypeScript', icon: <SiTypescript color="#007ACC" className='tech-skills' /> },
+        { name: 'Firebase', icon: <SiFirebase color="#FFCA28" className='tech-skills' /> },
+        { name: 'MaterialUI', icon: <img src={MaterialUILogo} className='tech-skills' />},
+        { name: 'HTML5', icon: <FaHtml5 color="#E34F26" className='tech-skills' /> },
+        { name: 'CSS', icon: <SiCss3 color="#1572B6" className='tech-skills' /> }
     ];
 
     const introText = 
