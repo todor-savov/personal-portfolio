@@ -3,7 +3,7 @@ import { Autoplay, Navigation, Pagination } from 'swiper/modules';
 import { SiJavascript, SiTypescript, SiFirebase, SiCss3 } from 'react-icons/si';
 import { FaReact, FaGithub, FaHtml5, FaDatabase, FaCog, FaJava } from 'react-icons/fa';
 import { FiExternalLink } from 'react-icons/fi';
-import { Avatar, Tooltip, Typography } from '@mui/material';
+import { Tooltip, Typography } from '@mui/material';
 import MaterialUILogo from '../../assets/MaterialUILogo.png';
 import MySQLlogo from '../../assets/mysql_logo.png';
 import { projects } from '../../common/constants';
