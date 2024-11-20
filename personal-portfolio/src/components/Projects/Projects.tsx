@@ -29,18 +29,18 @@ type TechIcons = {
 };
 
 const techIcons: TechIcons = {
-  React: <FaReact color="#61DAFB" size={50} />,     
-  JavaScript: <SiJavascript color="#F7DF1E" size={50} />,
-  TypeScript: <SiTypescript color="#007ACC" size={50} />, 
-  MaterialUI: <Avatar src={MaterialUILogo} variant='square' sx={{ width: 15, height: 15 }} />,
-  HTML5: <FaHtml5 color="#E34F26" size={50} />,
-  CSS: <SiCss3 color="#1572B6" size={50} />,
-  Firebase: <SiFirebase color="#FFCA28" size={50} />,
-  WebStorageAPI: <FaDatabase size={50} color="#4A90E2" />,
-  JavaSwing: <FaJava size={50} color="#f8981d" />,
-  JDBC: <FaDatabase size={50} color="#f8981d" />,
-  MySQL: <Avatar src={MySQLlogo} variant='square' sx={{ width: 29, height: 18 }}/>,
-  WMI: <FaCog size={50} color="#0078D4" /> 
+  React: <FaReact color="#61DAFB" className='tech-icons' />,     
+  JavaScript: <SiJavascript color="#F7DF1E" className='tech-icons' />,
+  TypeScript: <SiTypescript color="#007ACC" className='tech-icons' />, 
+  MaterialUI: <img src={MaterialUILogo} className='tech-icons' />,
+  HTML5: <FaHtml5 color="#E34F26" className='tech-icons' />,
+  CSS: <SiCss3 color="#1572B6" className='tech-icons' />,
+  Firebase: <SiFirebase color="#FFCA28" className='tech-icons' />,
+  WebStorageAPI: <FaDatabase color="#4A90E2" className='tech-icons' />,
+  JavaSwing: <FaJava color="#f8981d" className='tech-icons' />,
+  JDBC: <FaDatabase color="#f8981d" className='tech-icons' />,
+  MySQL: <img src={MySQLlogo} className='tech-icons' />,
+  WMI: <FaCog color="#0078D4" className='tech-icons' />
 };
 
 const Projects = () => {
