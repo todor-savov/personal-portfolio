@@ -1,13 +1,14 @@
 .swiper-container {  
   display: flex;
+  max-width: 70vw;
+  width: 100%;
   height: 80vh;
-  max-width: 70rem;
-  margin-top: 7rem;
 }
 
 .swiper-slide {  
   display: flex;
   flex-direction: column;
+  justify-content: center;
   box-sizing: border-box;
   border-radius: 20px;
   background-color: rgba(255, 255, 255, 0.9);
@@ -43,11 +44,13 @@
 .image-container {
   flex: 1;
   display: flex;
-  justify-content: center;
-  height: 50%;
+  margin: 0 auto;
+  padding: 0.5rem;
 }
 
 .image-container img {
+  width: 90vh;
+  height: 50vh;
   transition: filter 0.3s ease;
 }
 
@@ -81,7 +84,7 @@
   justify-content: center;
   margin: 0 auto;
   overflow: hidden;
-  max-width: 70%;
+  max-width: 90%;
   width: 100%;
   gap: 20px;
 }
@@ -89,12 +92,12 @@
 .tech-item {
   display: flex;
   flex-direction: column;
+  gap: 0.1rem;
   align-items: center;
-  animation: loop 5s linear infinite;
+  animation: loop 2s linear infinite;
   width: 8rem;
-  height: 4rem;
+  height: 3rem;
   color: black;
-  gap: 0.2rem;
 }
 
 @keyframes loop {
@@ -111,14 +114,24 @@
   height: 2rem;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 481px) and (max-width: 768px) {
+  .swiper-container {
+    max-width: 80vw;
+    height: 85vh;
+  }
+
   .swiper-slide {
     gap: 1rem;
   }
 
+  .tech-stack {
+    max-width: 90%;
+    gap: 25px;
+  }
+  
   .tech-item {
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 5rem;
+    height: 2rem;
   }
 
   .tech-item span {
@@ -126,17 +139,12 @@
   }
 
   .tech-icons {
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 1rem;
+    height: 1rem;
   }
 
   .image-container img {
     width: 100%;
-  }
-
-  .tech-stack {
-    max-width: 80%;
-    gap: 25px;
   }
 
   .buttons-container {
@@ -146,12 +154,13 @@
 
 @media (max-width: 480px) {
   .swiper-container {
-    height: 95vh;
+    max-width: 80vw;
+    height: 82vh;
   }
 
   .swiper-slide {
     padding: 0.8rem;
-    gap: 0.3rem;
+    gap: 0.1rem;
   }
 
   .text-container {
@@ -173,8 +182,13 @@
     margin-bottom: 0.5rem;
   }
 
+  .tech-stack {
+    max-width: 90%;
+    gap: 12px;
+  }
+
   .tech-item {
-    width: 1.5rem;
+    width: 3rem;
     height: 1.5rem;
   }
 
@@ -187,16 +201,20 @@
     height: 1rem;
   }
 
-  .buttons-container a {
-    padding: 8px;
+  .image-container {
+    padding: 0.3rem;
+  }
+
+  .image-container img {
+    width: 40vh;
+    height: 30vh;
   }
   
-  .tech-stack {
-    max-width: 80%;
+  .buttons-container {
     gap: 8px;
   }
 
-  .buttons-container {
-    gap: 8px;
+  .buttons-container a {
+    padding: 8px;
   }
 }
