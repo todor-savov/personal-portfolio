@@ -68,67 +68,65 @@ const Contact = () => {
             style={{ position: 'relative', zIndex: 1 }}
         >
             <div className="contact-container">
-                <div className="contact-row">
-                    <div className="contact-left">
-                        <p>I'm open to new opportunities! If you're looking to hire a dedicated front-end developer, feel free to reach out to discuss potential collaborations.</p>
+                <div className="contact-left">
+                    <p>I'm open to new opportunities! If you're looking to hire a dedicated front-end developer, feel free to reach out to discuss potential collaborations.</p>
 
-                        <div className="social-icons">
-                            <a href="https://github.com/todor-savov" target="_blank" rel="noopener noreferrer">
-                                <i className="fab fa-github"></i>
-                                <span>GitHub</span>
-                            </a>
+                    <div className="social-icons">
+                        <a href="https://github.com/todor-savov" target="_blank" rel="noopener noreferrer">
+                            <i className="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
 
-                            <a href="https://www.linkedin.com/in/todor-savov-4a14253b/" target="_blank" rel="noopener noreferrer">
-                                <i className="fab fa-linkedin"></i>
-                                <span>LinkedIn</span>
-                            </a>
+                        <a href="https://www.linkedin.com/in/todor-savov-4a14253b/" target="_blank" rel="noopener noreferrer">
+                            <i className="fab fa-linkedin"></i>
+                            <span>LinkedIn</span>
+                        </a>
 
-                            <a href="mailto:todor.savov@abv.bg">
-                                <i className="fas fa-envelope"></i>
-                                <span>Email</span>
-                            </a>
+                        <a href="mailto:todor.savov@abv.bg">
+                            <i className="fas fa-envelope"></i>
+                            <span>Email</span>
+                        </a>
 
-                            <a href={myCV} download>
-                                <i className="fas fa-file-download"></i>
-                                <span>CV</span>
-                            </a>
-                        </div>
+                        <a href={myCV} download>
+                            <i className="fas fa-file-download"></i>
+                            <span>CV</span>
+                        </a>
                     </div>
+                </div>
 
-                    <div className="contact-right">
-                        <Formik initialValues={initialValues} validationSchema={validationSchema} onSubmit={onSubmit}>
-                            {({ isSubmitting }) => (
-                                <Form className="contact-form">
-                                    <div className="field-container">
-                                        <label htmlFor="name">Name</label>
-                                        <Field name="name" type="text" />
-                                        <ErrorMessage name="name" component="div" className="error" />
-                                    </div>
+                <div className="contact-right">
+                    <Formik initialValues={initialValues} validationSchema={validationSchema} onSubmit={onSubmit}>
+                        {({ isSubmitting }) => (
+                            <Form className="contact-form">
+                                <div className="field-container">
+                                    <label htmlFor="name">Name</label>
+                                    <Field name="name" type="text" />
+                                    <ErrorMessage name="name" component="div" className="error" />
+                                </div>
 
-                                    <div className="field-container">
-                                        <label htmlFor="email">Email</label>
-                                        <Field name="email" type="email" />
-                                        <ErrorMessage name="email" component="div" className="error" />
-                                    </div>
+                                <div className="field-container">
+                                    <label htmlFor="email">Email</label>
+                                    <Field name="email" type="email" />
+                                    <ErrorMessage name="email" component="div" className="error" />
+                                </div>
 
-                                    <div className="field-container">
-                                        <label htmlFor="message">Message</label>
-                                        <Field name="message" as="textarea" rows="5" />
-                                        <ErrorMessage name="message" component="div" className="error" />
-                                    </div>
+                                <div className="field-container">
+                                    <label htmlFor="message">Message</label>
+                                    <Field name="message" as="textarea" rows="5" />
+                                    <ErrorMessage name="message" component="div" className="error" />
+                                </div>
 
-                                    <button type="submit" disabled={isSubmitting}>
-                                        {isSubmitting ? "Sending..." : "Send Message"}
-                                    </button>                            
-                                </Form>
-                            )}
-                        </Formik>
-                        <Snackbar open={openSnackbar} autoHideDuration={6000} onClose={() => setOpenSnackbar(false)}>
-                            <Alert onClose={() => setOpenSnackbar(false)} severity={snackbarSeverity} sx={{ fontWeight: 'bold' }}>
-                                {snackbarMessage}
-                            </Alert>
-                        </Snackbar>         
-                    </div>
+                                <button type="submit" disabled={isSubmitting}>
+                                    {isSubmitting ? "Sending..." : "Send Message"}
+                                </button>                            
+                            </Form>
+                        )}
+                    </Formik>
+                    <Snackbar open={openSnackbar} autoHideDuration={6000} onClose={() => setOpenSnackbar(false)}>
+                        <Alert onClose={() => setOpenSnackbar(false)} severity={snackbarSeverity} sx={{ fontWeight: 'bold' }}>
+                            {snackbarMessage}
+                        </Alert>
+                    </Snackbar>         
                 </div>
             </div>
         </motion.div>
