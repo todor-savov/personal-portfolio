@@ -28,8 +28,8 @@ const Transition = () => {
         <Typography variant="h4" id='front-dev'>
             I am a Front-End Developer with&nbsp;
             <Box id='tech-set'>
-                {icons[index % icons.length]}&nbsp;
                 <span style={{ color: "#1976d2" }}>
+                    {icons[index % icons.length]}&nbsp;
                     <TextTransition springConfig={presets.wobbly}>
                         {techSkills[index % techSkills.length]}
                     </TextTransition>
