@@ -10,6 +10,7 @@ import About from './components/About/About';
 import Projects from './components/Projects/Projects'
 import Contact from './components/Contact/Contact';
 import './App.css'
+import Experience from './components/Experience/Experience';
 
 const App = () => {
 
@@ -32,6 +33,7 @@ const App = () => {
         <Route path="/projects" element={<Projects />} />
         <Route path="/experience" element={<h1>Experience</h1>} />
         <Route path="/contact" element={<Contact />} />
+        <Route path='experience' element={<Experience />} />
       </Routes>  
       <Particles id="tsparticles" init={particlesInit} options={particlesOptions} loaded={particlesLoaded} />    
     </BrowserRouter>
