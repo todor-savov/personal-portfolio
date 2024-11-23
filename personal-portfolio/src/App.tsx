@@ -31,10 +31,9 @@ const App = () => {
         <Route path="/home" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
-        <Route path="/experience" element={<h1>Experience</h1>} />
         <Route path="/contact" element={<Contact />} />
-        <Route path='experience' element={<Experience />} />
-      </Routes>  
+        <Route path="/experience" element={<Experience />} />
+      </Routes>
       <Particles id="tsparticles" init={particlesInit} options={particlesOptions} loaded={particlesLoaded} />    
     </BrowserRouter>
   )
