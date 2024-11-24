@@ -22,10 +22,12 @@
     font-size: 1.2rem;
     font-weight: bold;
     margin-bottom: 10px;
+    color: black;
 }
 
 #experience-description {
     font-size: 1rem;
+    color: black;
 }
 
 @media (max-width: 480px) {
