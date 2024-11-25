@@ -10,7 +10,7 @@
     padding: 20px;
     min-width: 40vw;
     width: 100%;
-    height: 80vh;
+    height: 70vh;
 }
 
 .first-container {
@@ -39,7 +39,6 @@
     align-items: center;
     padding: 4px;
     gap: 4px;
-    margin-bottom: 1rem;
 }
 
 #tech-stack {
@@ -115,7 +114,8 @@
 @media (max-width: 480px) {
     .main-container {
         min-width: 80vw;
-        padding: 5px;
+        padding: 10px;
+        height: 80vh;
     }
 
     .first-container {
@@ -124,11 +124,14 @@
 
     #avatar-photo {
         width: 20%;
-        margin-top: 2rem;
     }
 
     .text-container {
         font-size: 0.7rem;
+    }
+
+    #about-me {
+        margin-bottom: 0.7rem;
     }
 
     .scroll {
@@ -158,6 +161,7 @@
     .main-container {
         min-width: 80vw;
         padding: 10px;
+        height: 80vh;
     }
 
     .first-container {
