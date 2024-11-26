@@ -56,6 +56,10 @@ export const experience = [
         date: "January - June 2024",
         title: "Alpha JavaScript Program at Telerik Software Academy",
         icon: DeveloperMode,
+        iconStyle: { 
+            background: "#32CD32",
+            color: "#fff",
+        },
         description:
           "Completed an intensive JavaScript program, gaining hands-on experience in modern front-end technologies like React, TypeScript, and ES6 standards.",
     },
@@ -63,6 +67,10 @@ export const experience = [
         date: "2013 - 2023",
         title: "Technical Support Specialist at SiteGround",
         icon: SupportAgent,
+        iconStyle: { 
+            background: "#FF0000",
+            color: "#fff",
+        },
         description:
           "Provided world-class hosting support, resolved complex CMS and website issues, and implemented process improvements, enhancing the team's efficiency and customer satisfaction.",
     },
@@ -70,6 +78,10 @@ export const experience = [
         date: "2015 - 2017",
         title: "Master's Degree in Computer Networks and Programming",
         icon: School,
+        iconStyle: { 
+            background: "#32CD32",
+            color: "#fff",
+        },
         description:
           "Earned a Master's degree at Sofia University, focusing on distributed systems, mobile technologies, and programming. This program ignited my passion for software development.",
     },   
