@@ -5,12 +5,12 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 1rem;
+    padding: 0.5rem;
     border-radius: 8px;
     background-color: rgba(255, 255, 255, 0.9);
     min-width: 40vw;
     width: 100%;
-    height: 70vh;
+    height: auto;
 }
 
 .contact-left {
@@ -20,7 +20,8 @@
 }
 
 .contact-left p {
-    margin-bottom: 2rem;
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
     color: black;
 }
 
@@ -33,7 +34,7 @@
 .social-icons a {
     display: flex;
     flex-direction: column;
-    font-size: 3rem;
+    font-size: 2rem;
     color: #333;
     transition: color 0.3s ease;
 }
@@ -115,10 +116,86 @@
     margin-top: -0.7rem;
 }
 
-@media (max-width: 480px) {   
+/* JioPhone 2 */
+@media (width: 240px) and (height: 320px) {
+    .contact-container {    
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .contact-left p {
+        font-size: 0.4rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .social-icons {
+        margin-bottom: 0.2rem;
+    }
+
+    .social-icons a {
+        font-size: 0.6rem;
+    }
+
+    .social-icons span {
+        font-size: 0.3rem;
+    }
+
+    .contact-form {
+        gap: 0.1rem;
+    }
+    
+    .contact-form label {
+        font-size: 0.3rem;
+    }
+
+    .contact-form textarea {
+        height: 1rem;
+        padding: 0.1rem;
+    }
+
+    .contact-form input[type="text"],
+    .contact-form input[type="email"],
+    .contact-form textarea {
+        font-size: 0.4rem;
+        padding: 0.2rem;
+    }
+
+    .contact-form button[type="submit"] {
+        font-size: 0.2rem;
+        padding: 0.5rem;
+    }
+
+    .error {
+        font-size: 0.3rem;
+    }
+}
+
+/* iPhone 4 (old device) */
+@media (width: 320px) and (height: 480px) {
+    .contact-container {
+        min-width: 80vw;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .contact-form textarea {
+        height: 1rem;
+    }
+
+    .contact-form input[type="text"],
+    .contact-form input[type="email"],
+    .contact-form textarea {
+        font-size: 0.6rem;
+        padding: 0.3rem;
+    }
+}
+
+@media (max-width: 480px) {
     .contact-container {
         min-width: 73vw;
-        height: 77vh;
+        height: auto;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
     }
 
     .contact-left {
@@ -126,21 +203,21 @@
     }
 
     .contact-left p {
-        font-size: 0.9rem;
+        font-size: 0.6rem;
         margin-bottom: 1rem;
     }
 
     .social-icons {
-        gap: 1.5rem;
+        gap: 1.2rem;
         margin-bottom: 1rem;
     }
 
     .social-icons a {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 
     .social-icons span {
-        font-size: 0.7rem;
+        font-size: 0.5rem;
     }
     
     .contact-right {
@@ -151,11 +228,20 @@
         gap: 0.3rem;
         padding: 0.2rem;
     }
+
+    .contact-form label {
+        font-size: 0.7rem;
+    }
     
     .contact-form input[type="text"],
     .contact-form input[type="email"],
     .contact-form textarea {
         font-size: 0.7rem;
+    }
+
+    .contact-form button[type="submit"] {
+        font-size: 0.7rem;
+        padding: 0.6rem;
     }
 
     .error {
@@ -166,7 +252,6 @@
 @media (min-width: 481px) and (max-width: 768px) {
     .contact-container {
         min-width: 75vw;
-        height: 75vh;
     }
 
     .contact-left p {
@@ -184,5 +269,28 @@
 
     .error {
         font-size: 0.8rem;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .contact-container {
+        min-width: 75vw;
+    }
+
+    .contact-left p {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .social-icons a {
+        font-size: 2.5rem;
+    }
+
+    .contact-form textarea {
+        height: 12rem;
+    }
+
+    .error {
+        font-size: 1rem;
     }
 }
