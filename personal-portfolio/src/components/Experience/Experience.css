@@ -7,11 +7,9 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-width: 60vw;
-    width: 100%;
-    min-height: 75vh;
     padding: 1.5rem;
-    overflow-y: auto;
+    max-height: 83vh;
+    min-width: 75vw;
 }
 
 .experience-date {
@@ -19,22 +17,50 @@
 }
   
 #experience-title {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: bold;
-    margin-bottom: 10px;
     color: black;
 }
 
 #experience-description {
-    font-size: 1rem;
+    font-size: 0.8rem;
     color: black;
+}
+
+div.vertical-timeline-element-content.bounce-in {
+    display: flex;
+    flex-direction: column;
+    padding: 0.6rem;
 }
 
 @media (max-width: 480px) {
     .experience-container {
-        min-width: 70vw;
-        max-height: 75vh;
-        justify-content: flex-start;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+    
+    #experience-title {
+        font-size: 0.5rem;
+    }
+
+    #experience-description {
+        font-size: 0.4rem;
+    }
+
+    span.experience-date.vertical-timeline-element-date {
+        text-align: center;
+        font-size: 0.65rem;
+        color: red;
+        padding-top: 0.5rem;
+        padding-bottom: 0;
+    }   
+}
+
+/* Medium devices - start */
+@media (min-width: 481px) and (max-width: 768px) {
+    .experience-date {
+        text-align: center;
+        color: red;
     }
 
     #experience-title {
@@ -42,42 +68,75 @@
     }
 
     #experience-description {
-        font-size: 0.7rem;
-    }
-
-    .experience-date {
-        color: red;
-        text-align: center;
-    }
-
-    .experience-item {
-        height: 37vh;
-        width: 38vh;
+        font-size: 0.6rem;
     }
 }
 
-@media (min-width: 481px) and (max-width: 768px) {
+/* Microsoft Lumia 550 device 640x360 */
+@media (width: 640px) and (height: 360px) {
     .experience-container {
-        min-width: 73vw;
-        max-height: 78vh;
-        justify-content: flex-start;
-    }
-
-    .experience-item {
-        height: 25vh;
-        max-width: 50vh;
-    }
-
-    .experience-date {
-        color: red;
-        text-align: center;
+        padding: 0.2rem;
     }
 
     #experience-title {
-        font-size: 1.2em;
+        font-size: 0.5rem;
+        margin-bottom: 0;
     }
 
     #experience-description {
-        font-size: 1rem;
+        font-size: 0.4rem;
+        margin-bottom: 0;
+    }
+
+    span.experience-date.vertical-timeline-element-date {
+        font-size: 0.4rem;
+    }   
+
+    div.vertical-timeline-element-content.bounce-in {
+        padding: 0.5rem;
+        max-height: 18vh;
+        margin-bottom: -1rem;
     }
 }
+/* Medium devices - end */
+
+/* Large devices - start */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .experience-date {
+        text-align: center;
+        color: red;
+    }
+
+    #experience-title {
+        font-size: 1rem;
+    }
+
+    #experience-description {
+        font-size: 0.8rem;
+    }
+}
+
+/* Nest Hub device 1024x600 */
+@media (width: 1024px) and (height: 600px) {
+    .experience-container {
+        padding: 0.5rem;
+    }
+
+    .experience-date {
+        text-align: center;
+        color: red;
+    }
+
+    span.experience-date.vertical-timeline-element-date {
+        font-size: 0.8rem;
+    }
+
+    #experience-title {
+        font-size: 0.8rem;
+    }
+
+    #experience-description {
+        font-size: 0.6rem;
+    }
+}
+/* Large devices - end */

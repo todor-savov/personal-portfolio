@@ -19,7 +19,7 @@ const Experience = () => (
               <VerticalTimelineElement key={index} className="experience-item"                
                   date={item.date}
                   dateClassName="experience-date"
-                  contentStyle={{ background: "white", borderRadius: "10px", padding: "1rem" }}                      
+                  contentStyle={{ borderRadius: "10px" }}                      
                   contentArrowStyle={{ borderRight: "7px solid rgb(33, 150, 243)" }}
                   icon={<item.icon />}
                   iconStyle={item.iconStyle}
