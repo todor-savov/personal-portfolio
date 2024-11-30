@@ -1,22 +1,18 @@
-.navigation {
+.navigation {   
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    z-index: 5;
     width: 100%;
     padding: 1rem;
     color: white;
-    height: 1.5rem;
-}
-
-.nav-link {
-    color: inherit;
 }
 
 #menu-icon-button {
+    display: flex;
+}   
+
+#nav-stack {
     display: none;
 }
 
@@ -34,32 +30,17 @@
     color: inherit;
 }
 
-@media (max-width: 480px) {
-    .navigation {
-        justify-content: left;
-        padding: 1rem 2rem;
+@media (min-width: 1025px) {   
+    #menu-icon-button {
+        display: none;
     }
 
     #nav-stack {
-        display: none;
+        display: flex;
+        justify-content: center;
     }
     
-    #menu-icon-button {
-        display: block;       
-    }    
-}
-
-@media (min-width: 481px) and (max-width: 768px) {
-    .navigation {
-        justify-content: left;
-        padding: 0.8rem 2rem;
+    .nav-link {
+        color: inherit;
     }
-
-    #nav-stack {
-        display: none;
-    }
-    
-    #menu-icon-button {
-        display: block;       
-    }    
 }
