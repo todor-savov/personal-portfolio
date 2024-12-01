@@ -3,7 +3,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
 import Transition from "../TextTransition/Transition";
-import logoAnimation from "../../assets/gummy-app-development.png";
+import logoAnimation from "../../assets/developer.jpg";
 import { motion } from "framer-motion";
 import "./Home.css";
 
@@ -22,26 +22,22 @@ const Home = () => {
             style={{ position: 'relative', zIndex: 1 }}
         >
             <Box className="home">
-            {welcomeText.map((text, index) => (
-                    <div key={index} className="typewriter">
-                        <Typography variant="h4" key={index} sx={{ mb: 2, fontWeight: "bold", mt: index === 0 ? 0 : 2 }}>
-                            {text.split('').map((char, index) => (
-                                <span key={index} style={{ animationDelay: `${index * 0.18}s` }}
-                                    className="typewriter-character"
-                                >
-                                    {char === ' ' ? '\u00A0' : char}
-                                </span>
-                            ))}
-                        </Typography>
-                    </div>
-            ))}
+                {welcomeText.map((text, index) => (
+                    <Typography variant="h4" key={index}>
+                        {text.split('').map((char, index) => (
+                            <span key={index} style={{ animationDelay: `${index * 0.18}s` }} className="typewriter-character">
+                                {char === ' ' ? '\u00A0' : char}
+                            </span>
+                        ))}
+                    </Typography>
+                ))}
 
                 <Transition />
     
                 <img src={logoAnimation} alt="logo" className="logo-animation" />
-                <span id="copyrights">Illustration by <a href="https://icons8.com/illustrations/author/SH5qVUiWnjy4">Vijay Verma Ouch!</a></span>
+                {/* <span id="copyrights">Illustration by <a href="https://icons8.com/illustrations/author/SH5qVUiWnjy4">Vijay Verma Ouch!</a></span> */}
 
-                <Box className="social-icons" sx={{ mt: 2 }}>
+                <Box className="social-icons-home">
                     <IconButton
                         component="a"
                         href="https://github.com/todor-savov"
@@ -67,7 +63,7 @@ const Home = () => {
                     >
                         <EmailIcon fontSize="large" />
                     </IconButton>
-                </Box>        
+                </Box>
             </Box>
         </motion.div>
     );
