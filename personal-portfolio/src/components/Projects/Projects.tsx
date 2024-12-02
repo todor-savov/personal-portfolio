@@ -52,7 +52,7 @@ const Projects = () => {
       viewport={{ once: true }} transition={{ duration: 3 }}
       style={{ position: 'relative', zIndex: 1 }}
     >
-      <Swiper direction='vertical' className="swiper-container"
+      <Swiper direction='horizontal' className="swiper-container"
               modules={[Autoplay, Pagination, Navigation]} 
               autoplay={{ delay: 15000, disableOnInteraction: false, pauseOnMouseEnter: true }}
               spaceBetween={30} slidesPerView={1}
