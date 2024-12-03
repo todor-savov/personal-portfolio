@@ -79,7 +79,7 @@ export const experience = [
         title: "Master's Degree in Computer Networks and Programming",
         icon: School,
         iconStyle: { 
-            background: "#32CD32",
+            background: "#00BFFF",
             color: "#fff",
         },
         description:
