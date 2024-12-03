@@ -3,6 +3,7 @@
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 1.5rem;
   padding: 1rem;
+  max-width: 80vw;
 }
 
 .swiper-slide {
@@ -213,6 +214,10 @@
 }
 
 @media (min-width: 1025px) {
+  .swiper-container {
+    max-width: 60vw;
+  }
+  
   .text-container {
     gap: 1.5rem;
   }
