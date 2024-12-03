@@ -5,8 +5,7 @@
     background-color: rgba(255, 255, 255, 0.9);
     border-radius: 5%;
     padding: 1rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    max-width: 70vw;
 }
 
 .contact-left p {
@@ -168,8 +167,7 @@
 
 @media (min-width: 481px) and (max-width: 768px) {
     .contact-container {
-        margin-left: 5rem;
-        margin-right: 5rem;
+        max-width: 70vw;
     }
 
     .contact-left p {
@@ -211,8 +209,7 @@
 
 @media (min-width: 769px) and (max-width: 1024px) {
     .contact-container {
-        margin-left: 5rem;
-        margin-right: 5rem;
+        max-width: 80vw;
     }
 
     .contact-left p {
@@ -254,9 +251,8 @@
 
 @media (min-width: 1025px) {
     .contact-container {
+        max-width: 60vw;
         padding: 1.5rem;
-        margin-left: 25rem;
-        margin-right: 25rem;
     }
 
     .contact-left p {
