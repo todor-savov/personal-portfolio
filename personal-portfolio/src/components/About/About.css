@@ -1,14 +1,10 @@
 .main-container {
-    position: absolute;
-    transform: translate(-50%, -50%);
-    background-color: rgba(255, 255, 255, 0.9);
-    border-radius: 14px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    border-radius: 14px;
+    background-color: rgba(255, 255, 255, 0.9);
     padding: 1.5rem;
-    max-width: 70vw;
-    max-height: 80vh;
 }
 
 .first-container {
