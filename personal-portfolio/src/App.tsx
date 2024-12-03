@@ -26,17 +26,21 @@ const App = () => {
      
   return (
     <BrowserRouter>
-      <Navigation />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/home" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/experience" element={<Experience />} />
-        <Route path='test' element={<Test />} />
-      </Routes>
-      <Particles id="tsparticles" init={particlesInit} options={particlesOptions} loaded={particlesLoaded} />    
+      <div className="app-container">
+        <Navigation />    
+        <div className="content-container">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/home" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/experience" element={<Experience />} />
+            <Route path='/test' element={<Test />} />
+          </Routes>
+        </div>
+        <Particles id="tsparticles" init={particlesInit} options={particlesOptions} loaded={particlesLoaded} />
+      </div>
     </BrowserRouter>
   )
 }
