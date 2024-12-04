@@ -215,7 +215,7 @@
 
 @media (min-width: 1025px) {
   .swiper-container {
-    max-width: 60vw;
+    max-width: 50vw;
   }
   
   .text-container {
@@ -253,7 +253,7 @@
   }
 
   .image-container img {
-    width: 40vw;
-    height: 25vw;
+    width: 35vw;
+    height: 20vw;
   }
 }
