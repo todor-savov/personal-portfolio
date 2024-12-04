@@ -36,7 +36,7 @@ const About = () => {
 
   return (
         <motion.div
-            initial={{ opacity: 0, scale: 0.1, rotate: -180 }}
+            initial={{ opacity: 0, scale: 0.1, rotate: -270 }}
             whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
             viewport={{ once: true }} transition={{ duration: 3 }}
             style={{ position: 'relative', zIndex: 1 }}
